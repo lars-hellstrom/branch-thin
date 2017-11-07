@@ -1,0 +1,38 @@
+% cmplutil2.ins --- DOCSTRIP installation script for 
+% network completion utility 2
+\input docstrip
+
+% Redefine the \MetaPrefix; it should be something which starts a
+% until-end-of-line comment:
+\edef\MetaPrefix{\string#\string#}
+
+
+% Redefine the file preamble and postamble; this is necessary because 
+% otherwise the old \metaPrefix is inserted at the beginning of these 
+% lines.
+\preamble
+
+In other words:
+**************************************
+* This Source is not the True Source *
+**************************************
+the true source is the file from which this one was generated.
+
+\endpreamble
+
+\postamble
+\endpostamble
+
+\askforoverwritefalse
+
+% Actually make the .tcl file. 
+\generate{
+   \file{wholetree.tcl}{
+%       \from{selfthin.dtx}{pkg,Poisson,database,noTk20130311}
+%       \from{selfthin.dtx}{pkg,Poisson,database,GUI}
+      \from{selfthin.dtx}{pkg,Poisson,database,simplerun20170513}
+   }
+}
+
+
+\endbatchfile
