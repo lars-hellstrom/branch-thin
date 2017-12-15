@@ -1,0 +1,5 @@
+The `.mp` files are meant to be processed using [MetaPost](https://en.wikipedia.org/wiki/MetaPost) (which is usually called `mpost` as an executable); doing so generates a number of minimal EPS files (vector graphics images) whose extensions consists of one or two digits. The `.tex` files are meant to be processed using pdf(La)TeX, and will generate PDF files with one of the above images per page.
+
+The file `onebranch.mp` generates figures depicting one simulated branch (the same individual) through a number of growth/thinning cycles. This was generated automatically, using subroutines in `selfthin.dtx`.
+
+The file `branching.mp` generates a variety of figures, some of which are used in our paper, and some of which were not. Most lines of code were again generated automatically using subroutines in `selfthin.dtx`, but some of those figures have been modified to add extra graphics. Other figures are entirely handcoded.

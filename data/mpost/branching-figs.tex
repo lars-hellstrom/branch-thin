@@ -1,0 +1,92 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+% \usepackage[round]{natbib}
+% 
+% \usepackage[utf8]{inputenc} % For .bib-file
+% 
+% \usepackage[T1]{fontenc}
+% 
+% \usepackage{subfig}
+% \usepackage{authblk}
+% \usepackage{array}
+% \usepackage{lineno} 
+% \usepackage{multirow} 
+
+\usepackage{graphicx}
+\usepackage{ifpdf}
+\ifpdf
+   \DeclareGraphicsRule{*}{mps}{*}{}
+\fi
+
+
+\begin{document}
+
+\pdfpageheight=0cm\pdfpagewidth=0cm
+\pdfvorigin=0cm\pdfhorigin=0cm
+
+\newcommand{\mpspage}[1]{\shipout\hbox{\includegraphics{#1}}}
+\newcommand{\nofigpage}[1]{%
+   \shipout\hbox{#1 : The picture is in another castle.}%
+}
+
+\mpspage{branching.1}
+\mpspage{branching.2}
+\mpspage{branching.3}
+\mpspage{branching.4}
+\mpspage{branching.5}
+\mpspage{branching.6}
+\mpspage{branching.7}
+\nofigpage{8}
+\nofigpage{9}
+\nofigpage{10}
+\mpspage{branching.11}
+\mpspage{branching.12}
+\mpspage{branching.13}
+\nofigpage{14}
+\nofigpage{15}
+\nofigpage{16}
+\nofigpage{17}
+\nofigpage{18}
+\nofigpage{19}
+\nofigpage{20}
+\nofigpage{21}
+\mpspage{branching.22}
+\mpspage{branching.23}
+\nofigpage{24}
+\nofigpage{25}
+\nofigpage{26}
+\nofigpage{27}
+\nofigpage{28}
+\nofigpage{29}
+\mpspage{branching.30}
+\nofigpage{31}
+\nofigpage{32}
+\nofigpage{33}
+\nofigpage{34}
+\nofigpage{35}
+\nofigpage{36}
+\nofigpage{37}
+\nofigpage{38}
+\nofigpage{39}
+\nofigpage{40}
+\nofigpage{41}
+\nofigpage{42}
+\nofigpage{43}
+\nofigpage{44}
+\nofigpage{45}
+\nofigpage{46}
+\nofigpage{47}
+\nofigpage{48}
+\nofigpage{49}
+\mpspage{branching.50}
+\mpspage{branching.51}
+\mpspage{branching.52}
+\mpspage{branching.53}
+\mpspage{branching.54}
+
+
+\end{document}

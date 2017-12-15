@@ -1,5 +1,18 @@
-# branch-thin
-Scripts for simulating botanical tree growth with branch-thinning
+# branch-thin(-archival)
+Scripts for simulating botanical tree growth with branch-thinning,
+**also** the various simulation outputs and other datasets we (Lars Hellström, Linus Carlsson, Daniel Falster, Mark Westoby, and Åke Brännström) used in the paper _Branch thinning and the large-scale, self-similar structure of trees_.
+
+Since the simulation outputs are significantly larger than the sources for the software used to produce them, this repository is primarily of interest to researchers wanting to scrutinise our research. Programmers who just want the software may instead get it from the sibling [branch-thin](https://github.com/lars-hellstrom/branch-thin) repository; that is also where further development of this software would happen.
+
+## The data directory
+
+The data directory has three subdirectories corresponding to how the data would be used.
+- data/matlab contains Matlab scripts for generating various figures, and the data files used by those scripts. Some of the data here are not new, but reproduced from the literature.
+- data/mpost contains MetaPost scripts for generating various figures.
+- data/simulation contains the raw data output by the simulations; each file records hundreds or thousands of samples (one sample per row).
+Each subdirectory has its own README with further details on the files. For historical reasons, some content appears both in data/matlab and data/simulations.
+
+## README for the software-only [branch-thin](https://github.com/lars-hellstrom/branch-thin) repository.
 
 These scripts are written in Tcl (see [www.tcl.tk](http://www.tcl.tk/) or [Wikipedia: Tcl](https://en.wikipedia.org/wiki/Tcl)), with source code following the [Literate Programming](https://en.wikipedia.org/wiki/Literate_programming) paradigm, [more precisely](http://mirrors.ctan.org/macros/latex/contrib/tclldoc/tclldoc.pdf) the [doc/DocStrip](http://mirrors.ctan.org/macros/latex/base/doc.pdf) variant of that paradigm that dominates in the LaTeX world. Accordingly, the source file is also a technical report on how the code works.
 
