@@ -10,6 +10,7 @@ The data directory has three subdirectories corresponding to how the data would 
 - data/matlab contains Matlab scripts for generating various figures, and the data files used by those scripts. Some of the data here are not new, but reproduced from the literature.
 - data/mpost contains MetaPost scripts for generating various figures.
 - data/simulation contains the raw data output by the simulations; each file records hundreds or thousands of samples (one sample per row).
+
 Each subdirectory has its own README with further details on the files. For historical reasons, some content appears both in data/matlab and data/simulations.
 
 ## README for the software-only [branch-thin](https://github.com/lars-hellstrom/branch-thin) repository.
